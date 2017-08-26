@@ -6,8 +6,6 @@ JavaScript是一门很棒的语言，他有着简单的语法、丰富的生态�
 
 与此同时，我们都知道JavaScript这门语言中有一些很棘手的部分，其中有些部分可以迅速使我们的一些日常工作陷入地狱中，还有些部分十分可笑
 
-
-The original idea for WTFJS belongs to [Brian Leroux](https://twitter.com/brianleroux). This list is highly inspired by his talk [**“WTFJS”** at dotJS 2012](https://www.youtube.com/watch?v=et8xNAc2ic8):
 WTFJS的最初构想来源于 [Brian Leroux](https://twitter.com/brianleroux). 这个清单被他高度赞赏[**“WTFJS”** at dotJS 2012](https://www.youtube.com/watch?v=et8xNAc2ic8):
 
 
