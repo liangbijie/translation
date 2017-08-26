@@ -106,29 +106,29 @@ const foo = function () {}
 
 # 👀 Examples
 
-## `[]` is equal `![]`
+## `[]` 等于 `![]`
 
-Array is equal not array:
+数组等于非数组:
 
 ```js
 [] == ![] // -> true
 ```
 
-### 💡 Explanation:
+### 💡 解释:
 
 * [**12.5.9** Logical NOT Operator (`!`)](https://www.ecma-international.org/ecma-262/#sec-logical-not-operator)
 * [**7.2.13** Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
 
-## true is false
+## true 就是 false
 
 ```js
 !!'false' ==  !!'true'  // -> true
 !!'false' === !!'true' // -> true
 ```
 
-### 💡 Explanation:
+### 💡 解释:
 
-Consider this step-by-step:
+仔细思考下面例子:
 
 ```js
 // true is 'truthy' and represented by value 1 (number), 'true' in string form is NaN.
@@ -148,7 +148,7 @@ false == 'false'  // -> false
 'b' + 'a' + + 'a' + 'a'
 ```
 
-This is an old-school joke in JavaScript, but remastered. Here's the original one:
+这是一个被翻新的一个老旧的JavaScript笑话，下面是原始的例子
 
 ```js
 'foo' + + 'bar' // -> 'fooNaN'
