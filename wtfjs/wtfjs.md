@@ -1,7 +1,4 @@
-t the f*ck JavaScript?
-
-[![WTFPL 2.0][license-image]][license-url]
-[![NPM version][npm-image]][npm-url]
+JavaScript是什么鬼?
 
 > A list of funny and tricky JavaScript examples
 
