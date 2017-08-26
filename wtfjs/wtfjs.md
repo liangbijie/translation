@@ -1,26 +1,18 @@
 JavaScript是什么鬼?
 
-> A list of funny and tricky JavaScript examples
+> 有趣并且棘手的JavaScript例子清单
 
-JavaScript is a great language. It has a simple syntax, large ecosystem and, what is most important, a great community.
+JavaScript是一门很棒的语言，他有着简单的语法、丰富的生态，最重要的是，有一个庞大的社区。
 
-At the same time, we all know that JavaScript is quite a funny language with tricky parts. Some of them can quickly turn our everyday job into hell, some of them can make us laugh out loud.
+与此同时，我们都知道JavaScript这门语言中有一些很棘手的部分，其中有些部分可以迅速使我们的一些日常工作陷入地狱中，还有些部分十分可笑
+
 
 The original idea for WTFJS belongs to [Brian Leroux](https://twitter.com/brianleroux). This list is highly inspired by his talk [**“WTFJS”** at dotJS 2012](https://www.youtube.com/watch?v=et8xNAc2ic8):
+WTFJS的最初构想来源于 [Brian Leroux](https://twitter.com/brianleroux). 这个清单被他高度赞赏[**“WTFJS”** at dotJS 2012](https://www.youtube.com/watch?v=et8xNAc2ic8):
+
+
 
 [![dotJS 2012 - Brian Leroux - WTFJS](https://img.youtube.com/vi/et8xNAc2ic8/0.jpg)](https://www.youtube.com/watch?v=et8xNAc2ic8)
-
-# Node Packaged Manuscript
-
-You can install this handbook using `npm`. Just run:
-
-```
-$ npm install -g wtfjs
-```
-
-You should be able to run `wtfjs` at the command line now. This will open the manual in your selected `$PAGER`. Otherwise, you may continue reading on here.
-
-The source is available here: <https://github.com/denysdovhan/wtfjs>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
