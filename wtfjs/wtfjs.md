@@ -69,42 +69,42 @@ WTFJS的最初构想来源于 [Brian Leroux](https://twitter.com/brianleroux). �
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# 💪🏻 Motivation
+# 💪🏻 动力
 
-> Just for fun
+> 只是为了好玩
 >
 > &mdash; _[**“Just for Fun: The Story of an Accidental Revolutionary”**](https://en.wikipedia.org/wiki/Just_for_Fun), Linus Torvalds_
 
-The primary goal of this list is to collect some crazy examples and explain how they work, if possible. Just because it's fun to learn something that we didn't know before.
+这个列表列表最主要的目标是收集一些疯狂的例子并且解释他们如何运行的，如有可能，只是因为他很有趣，能学到一些我们以前不知道的东西
 
-If you are a beginner, you can use these notes to get a deeper dive into JavaScript. I hope these notes will motivate you to spend more time reading the specification.
+如果是一个初学者，你可以利用这些内容对JavaScript有一个更深的理解。我希望这些内容能激励你花更多的时间阅读这些规范
 
-If you are a professional developer, you can consider these examples as a great reference for all of the quirks and unexpected edges of our beloved JavaScript.
+如果你是一个专业的开发人员，你可以考虑用这些例子作为重要的参考，去理解那些怪异并且意外的现象
 
-In any case, just read this. You're probably going to find something new.
+无论如何，只要你阅读他，你将有可能会发现新的东西
 
-# ✍🏻 Notation
+# ✍🏻 符号
 
-**`// ->`** is used to show the result of an expression. For example:
+**`// ->`** 用来展示表达式的结果，举个例子
 
 ```js
 1 + 1 // -> 2
 ```
 
-**`// >`** means the result of `console.log` or another output. For example:
+**`// >`** 意味着 `console.log` 或者其他输出的结果. 举个例子:
 
 ```js
 console.log('hello, world!') // > hello, world!
 ```
 
-**`//`** is just a comment used for explanations. Example:
+**`//`** 用来解释的注释. 举个例子:
 
 ```js
 // Assigning a function to foo constant
 const foo = function () {}
 ```
 
-# 👀 Examples
+# 👀 例子
 
 ## `[]` 等于 `![]`
 
@@ -116,8 +116,8 @@ const foo = function () {}
 
 ### 💡 解释:
 
-* [**12.5.9** Logical NOT Operator (`!`)](https://www.ecma-international.org/ecma-262/#sec-logical-not-operator)
-* [**7.2.13** Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
+* [**12.5.9** 合理的 NOT 操作符 (`!`)](https://www.ecma-international.org/ecma-262/#sec-logical-not-operator)
+* [**7.2.13** 全等于操作符](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
 
 ## true 就是 false
 
@@ -135,12 +135,12 @@ const foo = function () {}
 true == 'true'    // -> false
 false == 'false'  // -> false
 
-// 'false' is not empty string, so it's truthy value
+// 'false' 不是空字符串，所以他是true
 !!'false' // -> true
 !!'true'  // -> true
 ```
 
-* [**7.2.13** Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
+* [**7.2.13** 全等于操作符](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
 
 ## baNaNa
 
@@ -154,31 +154,32 @@ false == 'false'  // -> false
 'foo' + + 'bar' // -> 'fooNaN'
 ```
 
-### 💡 Explanation:
+### 💡 解释:
 
-The expression is evaluated as `'foo' + (+'bar')`, which converts `'bar'` to not a number.
+这个表达式等同于 `'foo' + (+'bar')`, 其中 `'bar'` 不是一个数字.
 
-* [**12.8.3** The Addition Operator (`+`)](https://www.ecma-international.org/ecma-262/#sec-addition-operator-plus)
+* [**12.8.3** 加号操作符 (`+`)](https://www.ecma-international.org/ecma-262/#sec-addition-operator-plus)
 
-## `NaN` is not a `NaN`
+## `NaN` 不是 `NaN`
 
 ```js
 NaN === NaN // -> false
 ```
 
-### 💡 Explanation:
+### 💡 解释:
 
-The specification strictly defines the logic behind this behavior:
+严格模式定义了此行为背后的逻辑:
 
-> 1. If `Type(x)` is different from `Type(y)`, return **false**.
-> 2. If `Type(x)` is Number, then
->     1. If `x` is **NaN**, return **false**.
->     2. If `y` is **NaN**, return **false**.
+> 1. 如果 `Type(x)` 不同于 `Type(y)`, return **false**.
+> 2. 如果 `Type(x)` 是 Number 类型, 然后
+>     1. 如果 `x` 是 **NaN**, return **false**.
+>     2. 如果 `y` is **NaN**, return **false**.
 >     3. … … …
 >
-> &mdash; [**7.2.14** Strict Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-strict-equality-comparison)
+> &mdash; [**7.2.14** 全等于表达式](https://www.ecma-international.org/ecma-262/#sec-strict-equality-comparison)
 
 Following the definition of `NaN` from the IEEE:
+如下来自IEEE的`NaN`的定义
 
 > Four mutually exclusive relations are possible: less than, equal, greater than, and unordered. The last case arises when at least one operand is NaN. Every NaN shall compare unordered with everything, including itself.
 >
